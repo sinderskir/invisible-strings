@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+
+/*
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+.scrolly-container {
+  position: relative;
+}
+
+.sticky-thing {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 0;
+  min-height: 100vh;
+  /* Center everything inside */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-container {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 100%;
+}
+
+.sticky-thing iframe {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.steps-container {
+  position: relative;
+  padding: 0;
+  z-index: 10;
+  max-width: 35rem;
+  margin: 0 auto;
+  padding-bottom: 4em;
+}
+
+.step {
+  margin: 0 -20rem 0.5rem 20rem;
+  margin-top: 1rem;
+  margin-bottom: 40rem;
+  background-color: #e6e6e6d8;
+  color: black;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* When it's less than 700 pixels wide, do normal scrollytelling */
+
+@media only screen and (min-width: 700px) {
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    margin-top: 70vh;
+    order: 0;
+    /* Change these to adjust sizing options */
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: 100;
+  background-color: #EDEDED;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 0.5;
+  padding-top: 2.5rem;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 0.5;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  scroll-padding-top: 0;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures proper spacing and alignment */
+  box-sizing: border-box; /* Include padding within the image's width */
+}
+
+.inside {
+  content: "";
+  position: absolute;
+  top: 10rem;
+  left: 30%;
+  /* Adjust the left value to move the white box inward */
+  right: 30%;
+  /* Adjust the right value to move the white box inward */
+  bottom: 10rem;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.title-container h1 {
+  position: absolute;
+  top: 50%;
+  /* Move the title vertically to the center */
+  left: 50%;
+  /* Move the title horizontally to the center */
+  transform: translate(-50%, -50%);
+  /* Center the title using transform */
+  /*display: flex; /* Use flexbox for the layout */
+  /*flex-direction: row; /* Stack items vertically */
+  align-items: center;
+  /* Center items horizontally */
+  justify-content: center;
+  /* Center items vertically */
+  text-align: center;
+  /* Center the text within the title box */
+  z-index: 1;
+  margin: 0;
+}
+
+.string {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content h1 {
+  flex: 800px;
+  font-size: 38px;
+  color: #000;
+}
+
+.content p {
+  flex: 600px;
+  font-size: 20px;
+  color: #444;
+}
+
+.body-text {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+p {
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
