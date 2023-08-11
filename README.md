@@ -6,10 +6,10 @@ This repository has data, notebooks, and HTML code for my fourth project in the 
 ## About the project
 New York City has a prolific and competitive psychic business. But while many new yorkers reach out to spiritual workers looking for life-changing answers, the stories connected to these professionals remain unveiled. This project's main goal was to analyze the narratives they use to stand out online and explain the origins of their so-called gifts.
 
-<a href="https://sinderskir.github.io/invisible-strings/">Read the story<\a>.
+[Read the story](https://sinderskir.github.io/invisible-strings/ "Invisible Strings").
 
 ## Data
-I used <a href="https://www.yelp.com/developers">Yelp API<\a> to <a href="bd_final.csv">collect information<\a> about 5-star-rated psychic readers in New York City—their names, addresses, and business descriptions.
+I used [Yelp API](https://www.yelp.com/developers) to [collect information](bd_final.csv) about 5-star-rated psychic readers in New York City—their names, addresses, and business descriptions.
 
 The data was cleaned and analyzed using the Pandas library for Python and Regular Expressions.
 
